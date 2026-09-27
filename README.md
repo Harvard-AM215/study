@@ -41,6 +41,13 @@ stop and ask the question again.
 Codex needs permission to write files to save your map. If it says the folder is read-only,
 start it with `codex -s workspace-write`.
 
+## Why it works this way
+
+Every choice in the skill, from asking before explaining to having you build your own map, is
+explained in [WHY.md](WHY.md) with the research behind it and links to the papers. It also says
+which choices are our judgment rather than research, and how to suggest research we have
+missed.
+
 ## What it uses, and what it will not do
 
 - It uses only the **course textbook**, which is public. A copy of the published chapters is in

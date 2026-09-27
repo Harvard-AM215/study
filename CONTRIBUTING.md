@@ -10,6 +10,16 @@ Open an issue. The most useful reports say what you were studying (lecture or ch
 section), what the agent did, and what you expected instead. **Do not paste whole
 conversations**, and do not include anything personal, your grades, or any file from Canvas.
 
+## Suggesting research
+
+`WHY.md` gives the research behind each choice in the skill. If you know a study that supports,
+contradicts or refines one of them, open an issue with the **Research suggestion** template, or
+propose an edit to `WHY.md` in a pull request. Include the citation with its DOI or a permanent
+link, what the study did and found (who took part, what was compared, the result), and which
+choice it bears on. We add a paper after reading at least its abstract, prefer peer-reviewed
+work, and mark preprints as such. A change to the skill that cites evidence is easier to accept
+than one that does not.
+
 ## Proposing a change
 
 1. Fork the repository and make a branch.

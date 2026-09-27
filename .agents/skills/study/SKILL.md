@@ -143,6 +143,13 @@ the mermaid graph, write node labels in plain text or Unicode (√n, σ², μ): 
 render LaTeX. In the chat, also use plain text or Unicode, because many terminals do not render
 LaTeX.
 
+## When the student asks why
+
+If the student asks why the session works this way (why you ask before explaining, why only one
+hint, why the map), answer in two or three sentences and point them to the matching section of
+`WHY.md` in this folder, which gives the research behind each choice with links to the papers.
+Do not cite papers that are not in `WHY.md` as support for how this skill works.
+
 ## If something does not work
 
 - If a file in `textbook/` seems to be missing a chapter the student needs, it may not be public
