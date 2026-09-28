@@ -114,10 +114,16 @@ same way: it is then marked **confirmed**.
 
 ### 6. Write the map (last 4 minutes)
 
-Update `my/map.md` (format below) and show it to the student. Every node is marked **recalled**
+Update `my/map.md` (format below). Every node is marked **recalled**
 (it was in the student's map from memory), **added** (added after checking), or **repaired** (it
 was wrong or misconnected and the student fixed it). The link tested in step 5 is marked with
 how the question went: secure (right on their own), partial (right after the hint), or not yet.
+
+Then run `python3 scripts/render_map.py` (on Windows, `py -3 scripts/render_map.py`). Many
+Markdown viewers, the Claude desktop app's among them, show a mermaid graph only as its code, so
+the script draws each chapter's graph as a picture, `my/map-chapter-6.svg` for a section headed
+"Chapter 6: …", and links it on the line under the graph. Show the student the map and tell them
+where the picture is: it opens in any web browser.
 
 Then give the student a short **"For the course"** block to copy. It holds only facts from the
 session:
@@ -170,6 +176,8 @@ graph TD
   C --> D["log S drifts at μ − σ²/2 — repaired (partial)"]
 ```
 
+![Chapter 6 map](map-chapter-6.svg)
+
 | Idea or link | How it got here | Textbook |
 |---|---|---|
 | log S drifts at μ − σ²/2, because of Itô's correction | repaired: had "drifts at μ" | Ch. 6, *Itô's lemma* |
@@ -181,6 +189,13 @@ graph TD
 In the table and plan, mathematics can be written as LaTeX (`$\sigma^2$`). Inside the mermaid
 graph, write node labels in plain text or Unicode (√n, σ², μ): mermaid does not render LaTeX. In
 the chat, also use plain text or Unicode, because many terminals do not render LaTeX.
+
+The line under each graph links its picture, which `scripts/render_map.py` draws from the graph;
+after changing a graph, run the script again. The script reads only the parts of mermaid the
+example uses: the first line `graph TD` (or `LR`), nodes written `A["label"]`, and the arrows
+`-->`, `-.->` (dashed) and `==>` (thick), each with an optional label written `-. label .->` or
+`-->|label|`. It colors each node by the word after the dash at the end of its label, so end
+every label with "— recalled", "— added" or "— repaired", as in the example.
 
 ## When the student asks why
 
@@ -195,6 +210,8 @@ this skill works.
 - If a chapter the student wants is not in `textbook/`, it may not be public yet, or their copy
   may be old: run the script again (step 1). If it is still missing, say so and suggest a
   chapter that is there.
+- If `scripts/render_map.py` stops with an error, it names the line of the graph it could not
+  read and writes nothing. Rewrite that line in one of the forms above and run it again.
 - If the student asks you to just explain a topic without mapping it first, you may, but first
   offer the from-memory step so they can see where they stand, and keep the explanation tied to
   the textbook section.

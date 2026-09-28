@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Checks run locally and on every pull request. No network.
 #  1. The Codex and Claude Code copies of the skill are identical.
-#  2. The download script's offline tests pass.
+#  2. The offline tests of the download script and of the map-drawing script pass.
 #  3. If the textbook has been downloaded, every textbook file named in course/lectures.md is in
 #     textbook/, apart from chapters the index says are not public yet.
 set -euo pipefail
@@ -11,10 +11,12 @@ if ! cmp -s .agents/skills/study/SKILL.md .claude/skills/study/SKILL.md; then
   echo "FAIL: .agents/skills/study/SKILL.md and .claude/skills/study/SKILL.md differ" >&2
   status=1
 fi
-if ! python3 scripts/test_get_textbook.py >/dev/null 2>&1; then
-  echo "FAIL: scripts/test_get_textbook.py" >&2
-  status=1
-fi
+for t in scripts/test_get_textbook.py scripts/test_render_map.py; do
+  if ! python3 "$t" >/dev/null 2>&1; then
+    echo "FAIL: $t" >&2
+    status=1
+  fi
+done
 if [ -d textbook ]; then
   # A chapter that is not public yet is allowed only where the index says "will then be in <file>".
   while read -r f; do

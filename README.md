@@ -82,8 +82,9 @@ understand better. Then:
    from the chapter's exercises or worked examples. If your map had nothing missing or wrong, you
    test one of its links the same way. If you miss, you get one hint and a second
    try before any explanation.
-4. **Your map.** It updates `my/map.md` and gives you a short "For the course" block with what
-   changed, which the weekly Ed form may ask for.
+4. **Your map.** It updates `my/map.md`, draws each chapter's graph as a picture next to it
+   (`my/map-chapter-6.svg` for Chapter 6, which opens in any web browser), and gives you a short
+   "For the course" block with what changed, which the weekly Ed form may ask for.
 
 If you have more time, ask it for more practice on the same chapter. Next session, it reads your
 map and offers to continue.
@@ -99,6 +100,10 @@ map and offers to continue.
   you its date.
 - **A chapter is missing.** It may not be public yet. Run the download again after it is
   announced.
+- **Your map shows a block of code starting with `graph TD` instead of a diagram.** Your
+  Markdown viewer does not draw mermaid graphs; many do not. Open the picture of that chapter's
+  graph, `my/map-chapter-6.svg` for Chapter 6, in a web browser. If it is not there, run
+  `python3 scripts/render_map.py` (Windows: `py -3 scripts/render_map.py`) to draw it.
 - **The agent explains before you have answered.** Tell it to stop and ask the question again.
 - **You think the agent is wrong.** Check the section it names. The textbook is the authority on
   the mathematics; go with the textbook, and note it on the Ed form.
@@ -127,10 +132,12 @@ it again and copy your `my/` folder into the new copy, then run the script.
 ## Your map and your data
 
 `my/map.md` is yours: each chapter you have mapped, with every idea marked **recalled**,
-**added** or **repaired**, and a plan if you asked for more practice. The `my/` and `textbook/`
-folders are ignored by git, so they never end up in a commit or a pull request. The course does
-not collect your map or your conversations. (Your conversations do go to the AI provider you use,
-as with any use of your agent.)
+**added** or **repaired**, and a plan if you asked for more practice. Next to it,
+`my/map-chapter-6.svg` and the like are pictures of each chapter's graph, drawn by
+`scripts/render_map.py`; if you edit a graph yourself, run that script to redraw them. The `my/`
+and `textbook/` folders are ignored by git, so they never end up in a commit or a pull request.
+The course does not collect your map or your conversations. (Your conversations do go to the AI
+provider you use, as with any use of your agent.)
 
 ## Helping to improve it
 
