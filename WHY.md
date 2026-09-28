@@ -27,7 +27,7 @@ second link to it.
 | Tells you whether each answer was right | Feedback after testing | Moderate; feedback can also backfire |
 | Mixes different kinds of questions | Interleaved practice | Moderate for mixing problem types; mixing question formats is our extrapolation |
 | Asks you "why" | Self-explanation | Moderate |
-| Has you build your own concept map | Concept-mapping research | Moderate; retrieval practice may do more |
+| Has you lay out a chapter's main ideas from memory, then check them | Retrieval practice, including concept mapping done from memory | Moderate; what helps is recalling, not the map format |
 | Brings you back to the same map each week | Spaced practice | Strong for spacing; weekly reuse of the map is untested |
 | Ends with a plan of specific sections and exercises | Which study techniques work | Strong that practice beats rereading; the plan's format is our judgment |
 
@@ -175,9 +175,12 @@ tested this skill.
 
 ## 6. The textbook as the source of truth
 
-**What the skill does.** It opens the textbook section before asking or judging, names it, and
-records "not assessed" when the textbook does not settle whether your answer is right. It
-prefers the textbook's own exercises, whose solutions are printed, over questions it invents.
+**What the skill does.** It reads the published chapters that `scripts/get_textbook.py` downloads
+from the textbook's public site, refreshed at the start of a session when the agent can reach
+the internet, so it reads the same text you do. It opens the textbook section
+before asking or judging, names it, and records "not assessed" when the textbook does not settle
+whether your answer is right. It prefers the textbook's own exercises, whose solutions are
+printed, over questions it invents.
 
 **Why.** Language models can produce fluent text that is unsupported or wrong, which the
 research calls **hallucination**; Ji and colleagues (2023) survey the problem and attempts to
@@ -262,24 +265,30 @@ self-explanation "moderate utility".
 **Limits.** This research is about students generating explanations. How the agent itself
 explains is our extrapolation.
 
-## 11. Your own concept map
+## 11. Laying out the main ideas from memory
 
-**What the skill does.** It keeps a small graph of the concepts you have studied, with how they
-depend on each other and how well you know each one, in `my/map.md`, which you keep.
+**What the skill does.** Each session starts with you writing down a chapter's main ideas and how
+they connect, without looking. You then check that map against the chapter and repair what was
+missing or wrong, and the map is kept in `my/map.md` with each idea marked recalled, added or
+repaired.
 
-**Why.** Schroeder and colleagues (2018) combined 142 results on learning with concept maps
-(g = 0.58 overall). Constructing maps had a larger effect (g = 0.72) than studying maps made by
-someone else (g = 0.43), each measured against its own comparison condition, so this is not a
-head-to-head comparison. [DOI](https://doi.org/10.1007/s10648-017-9403-9) An earlier
-meta-analysis by Nesbit and Adesope (2006) found concept maps associated with better retention,
-with effects that varied with how the maps were used.
-[DOI](https://doi.org/10.3102/00346543076003413)
+**Why.** Karpicke and Blunt (2011) found that retrieval practice produced more learning from
+science texts than building concept maps with the text in view, even on a final test that asked
+students to create concept maps. [DOI](https://doi.org/10.1126/science.1199327) Blunt and
+Karpicke (2014) then had students build concept maps from memory: that and writing a paragraph
+from memory both beat restudying a week later, and the map did no better than the paragraph.
+[DOI](https://doi.org/10.1037/a0035934) O'Day and Karpicke (2021) found that building a concept
+map before retrieval practice added nothing to retrieval practice alone.
+[DOI](https://doi.org/10.1037/edu0000486) In these studies the benefit tracked retrieving from
+memory, not whether the answer was written as a paragraph or as a map. The skill uses a map because the question it asks
+is about structure, meaning which idea depends on which, and a map makes that structure visible
+to check. Constructing a map yourself has also been associated with more learning than studying
+a map someone else made (Schroeder and colleagues, 2018, g = 0.72 against 0.43, each against its
+own comparison). [DOI](https://doi.org/10.1007/s10648-017-9403-9)
 
-**Limits.** Karpicke and Blunt (2011) found that retrieval practice produced more learning from
-science texts than building concept maps, even on a final test that asked students to create
-concept maps. [DOI](https://doi.org/10.1126/science.1199327) So in this skill the questions come
-first, and the map records what you could and could not do in them; it does not replace them.
-None of these studies tested a map kept with the help of an agent.
+**Limits.** These studies used short science texts, not chapters with derivations; they gave
+students repeated rounds of recall, where a session here has one; and none used an agent. Applying them to this course's chapters, and checking the map with the agent rather
+than by rereading, is our inference.
 
 ## 12. Coming back to the same map each week
 
@@ -323,10 +332,17 @@ options follow the kind of guidance collected there; the specific rules are ours
 - **No promises about what is assessed.** The syllabus says quizzes "may draw on anything
   covered in lectures, readings, weekly exercises, and past P-Sets".
 - **Nothing personal.** Privacy: the skill does not need your name or grades to help you study.
-- **About 35 minutes by default.** A practical length for one sitting that leaves time to come
-  back later in the week (section 12). No study we know of tested this length.
-- **Secure / partial / not yet / not assessed.** A plain scale for your own use, not a
-  researched instrument.
+- **About 30 minutes by default, and one cycle per session.** One chapter mapped from memory,
+  checked, and one link repaired, with more practice only if you want it. A practical length
+  that leaves time to come back later in the week (section 12). No study we know of tested it.
+- **Checking against the headings and the "Connections" section first.** A quick way to see
+  what the chapter treats as its main ideas before rereading any paragraph in full. Our judgment.
+- **Repairing one link in your own words, with one question on it.** Restating a corrected idea
+  is a form of self-explanation (section 10), and one question checks whether you can use the link
+  straight away; the choice of
+  one link is our judgment.
+- **Recalled / added / repaired, and secure / partial / not yet / not assessed.** Plain labels
+  for your own use, not researched instruments.
 
 ## Suggesting research
 

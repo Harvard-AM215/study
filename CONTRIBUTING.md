@@ -35,6 +35,7 @@ than one that does not.
 how it gives hints, how it keeps the map, how it plans), and corrections to the lecture index in
 `course/lectures.md`.
 
-**What does not:** changes to `textbook/`, which is a copy of the course textbook. Report
+**What does not:** changes to the textbook, which `scripts/get_textbook.py` downloads from the
+course's public site and which is not part of this repository. Report
 problems in the textbook through the weekly form on Ed or an issue instead, and the staff will
 fix the textbook itself.
