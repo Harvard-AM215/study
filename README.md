@@ -1,5 +1,21 @@
 # AM115/AM215 study skill
 
+## Quick start
+
+1. **Get the folder.** In a terminal: `git clone https://github.com/Harvard-AM215/study.git am115-study`
+   (or click **Code → Download ZIP** above, unzip, and rename `study-main` to `am115-study`).
+2. **Download the textbook into it:** `cd am115-study`, then `python3 scripts/get_textbook.py`
+   (Windows: `py -3 scripts/get_textbook.py`).
+3. **Open the folder in your agent.** Claude Code desktop app: in the Code tab, choose
+   `am115-study`. Claude Code in a terminal: run `claude` in the folder. Codex: run
+   `codex -s workspace-write` in the folder.
+4. **Type `/study`** (Claude Code) or **`$study`** (Codex), pick a chapter, and write down its main
+   ideas from memory when asked. The agent takes you through the rest in about 25 minutes.
+
+Details and troubleshooting are below.
+
+## What this is
+
 This course asks you to understand its models: what a chapter's main ideas are, how each one
 follows from another, and why each step holds. A reliable way to find out how much of that you
 have is to lay out a chapter's main ideas from memory, before you look, and then check what you
