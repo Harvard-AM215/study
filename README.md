@@ -10,7 +10,7 @@
    `am115-study`. Claude Code in a terminal: run `claude` in the folder. Codex: run
    `codex -s workspace-write` in the folder.
 4. **Type `/study`** (Claude Code) or **`$study`** (Codex), pick a chapter, and write down its main
-   ideas from memory when asked. The agent takes you through the rest in about 25 minutes.
+   ideas from memory when asked. The agent takes you through the rest in about an hour.
 
 Details and troubleshooting are below.
 
@@ -23,7 +23,7 @@ wrote against the textbook. What you left out, and the links you got wrong, show
 work on.
 
 This folder is a **study skill** for your coding agent (Claude Code or Codex) that runs that
-process with you, using the course textbook. In one session of about 25 minutes you:
+process with you, using the course textbook. In one session of about an hour you:
 
 1. choose a chapter;
 2. write down its main ideas and how they connect, from memory;

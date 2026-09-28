@@ -33,14 +33,15 @@ feels clear and teaches much less.
    anything covered in lectures, readings, weekly exercises, and past P-Sets". Never tell the
    student that something will or will not be on a quiz. `course/lectures.md` says where each
    lecture's material is in the textbook; it is an index, not a list of what can be asked.
-6. **Keep to the student's time.** Ask how long they have (25 minutes if they do not say), and
-   leave the last 4 minutes for writing the map.
+6. **Keep to the student's time.** Ask how long they have (an hour if they do not say), and
+   leave the last 5 minutes for writing the map. If they have less than an hour, shorten steps 3
+   to 5 in proportion, and tell them at the start which steps will be shorter.
 7. **Nothing personal.** Do not ask for the student's name, grades or other personal details.
    Work only in this folder.
 
 ## The session
 
-Every session runs the **mapping cycle** below. It takes about 25 minutes and is a complete
+Every session runs the **mapping cycle** below. It takes about an hour and is a complete
 session on its own. Only if the student has time left and wants more, go on to "More practice".
 
 ### 1. Get the textbook (1 minute)
@@ -67,7 +68,7 @@ session on its own. Only if the student has time left and wants more, go on to "
   does not quiz on material with no public source; if the student asks for one, say so and
   suggest a chapter.
 
-### 3. Map it from memory (7 minutes)
+### 3. Map it from memory (10 minutes)
 
 Ask the student to write down, **without opening the chapter or their notes**, the chapter's
 3 to 5 main ideas and how they connect: which idea comes from which, or which one needs which.
@@ -79,7 +80,7 @@ Any form is fine: a list with arrows, short sentences, "A because B".
   "What is the first result it derives?", "What does that result get used for?"
 - **Do not correct, confirm or add anything yet.** Acknowledge what they wrote and move on.
 
-### 4. Check it against the chapter (6 minutes)
+### 4. Check it against the chapter (15 minutes)
 
 Now open the chapter together. Check the student's map against, in this order: the chapter's
 opening paragraphs; its section headings (the `##` and `###` headings, including the ones under
@@ -96,7 +97,7 @@ student's links is in doubt.
   step 5, after the student has tried.
 - Keep a note of what changed; the map records it.
 
-### 5. Repair one link (7 minutes)
+### 5. Repair one link (25 minutes)
 
 Pick the one missing or wrong link that matters most, meaning the one that later ideas in the
 chapter depend on, and tell the student which one it is and why in one sentence. If nothing was
@@ -112,7 +113,7 @@ same way: it is then marked **confirmed**.
    explain, start from an idea the student had right, show why the step is needed, keep it short
    and point to the section.
 
-### 6. Write the map (last 4 minutes)
+### 6. Write the map (last 5 minutes)
 
 Update `my/map.md` (format below). Every node is marked **recalled**
 (it was in the student's map from memory), **added** (added after checking), or **repaired** (it

@@ -332,9 +332,10 @@ options follow the kind of guidance collected there; the specific rules are ours
 - **No promises about what is assessed.** The syllabus says quizzes "may draw on anything
   covered in lectures, readings, weekly exercises, and past P-Sets".
 - **Nothing personal.** Privacy: the skill does not need your name or grades to help you study.
-- **About 30 minutes by default, and one cycle per session.** One chapter mapped from memory,
-  checked, and one link repaired, with more practice only if you want it. A practical length
-  that leaves time to come back later in the week (section 12). No study we know of tested it.
+- **About an hour by default, and one cycle per session.** One chapter mapped from memory,
+  checked, and one link repaired, with more practice only if you want it. We first planned 25
+  minutes, but a staff trial ran well past that before it reached the repair step. An hour still
+  leaves time to come back later in the week (section 12). No study we know of tested it.
 - **Checking against the headings and the "Connections" section first.** A quick way to see
   what the chapter treats as its main ideas before rereading any paragraph in full. Our judgment.
 - **Repairing one link in your own words, with one question on it.** Restating a corrected idea
