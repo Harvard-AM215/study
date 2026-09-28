@@ -15,24 +15,21 @@ means it has not happened yet.
 - **Tue 29 Sep and Thu 1 Oct: extreme values** (planned). The distribution of the largest of
   many values, fitting the tail of a distribution (block maxima and the GEV family), and why an
   estimate beyond the largest value seen is uncertain. Chapter 8, *Extreme value statistics*,
-  goes public on Mon 28 Sep and will then be in `textbook/08_extreme_value_statistics.md`.
+  goes public on the afternoon of Mon 28 Sep. It will then be in `textbook/08_extreme_value_statistics.md`.
+  Until it is there, choose an earlier lecture.
 - **AM215, Fri 2 Oct: packaging a Python project** (planned). The `src/` layout and
   `pyproject.toml`. No textbook chapter.
 
 ## Week 4
 
-- **Tue 22 Sep: diffusion, geometric Brownian motion and portfolios** (taught). The continuum
-  limit of the random walk and diffusive spreading ($\sqrt t$); geometric Brownian motion, Itô's
-  lemma and why $\log S$ drifts at $\mu - \sigma^2/2$; the Sharpe ratio and choosing a portfolio
-  on training years versus judging it on later years.
+- **Tue 22 Sep: diffusion and geometric Brownian motion** (taught). The continuum limit of the
+  random walk and diffusive spreading ($\sqrt t$); geometric Brownian motion, Itô's lemma and why
+  $\log S$ drifts at $\mu - \sigma^2/2$.
   - `textbook/05_random_walks_diffusion.md`: *The continuum limit and the diffusion equation*,
     *The fundamental solution*.
   - `textbook/06_gbm.md`: *Itô's lemma: changing variables in an SDE*, *Log returns and
     geometric Brownian motion*, *The lognormal solution*, *Fitting μ and σ from data*.
   - `textbook/sec03_drift_and_diffusion.md` (the Section 3 page).
-  - Portfolios and the Sharpe ratio are in an appendix that is not public yet. Keep questions on
-    them to the definition of the Sharpe ratio and the difference between a training-period and
-    a test-period score; mark anything further "not assessed".
 - **Thu 24 Sep: options and the Black–Scholes price** (taught). Calls and puts and their
   payoffs; the hedging argument; why the price does not depend on the stock's expected return.
   - `textbook/07_option_pricing.md`: *Calls and puts*, *Hedging and the Black–Scholes
