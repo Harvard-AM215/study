@@ -15,7 +15,7 @@ means it has not happened yet.
 - **Tue 29 Sep and Thu 1 Oct: extreme values** (planned). The distribution of the largest of
   many values, fitting the tail of a distribution (block maxima and the GEV family), and why an
   estimate beyond the largest value seen is uncertain. Chapter 8, *Extreme value statistics*,
-  goes public on the afternoon of Mon 28 Sep. It will then be in `textbook/08_extreme_value_statistics.md`.
+  goes public later this week, after its final review. It will then be in `textbook/08_extreme_value_statistics.md`.
   Until it is there, choose an earlier lecture.
 - **AM215, Fri 2 Oct: packaging a Python project** (planned). The `src/` layout and
   `pyproject.toml`. No textbook chapter.
