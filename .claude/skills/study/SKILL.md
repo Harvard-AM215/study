@@ -154,7 +154,7 @@ Continue on the same chapter:
 - **Multiple choice, if you use it:** write the correct option first, then turn it into each
   wrong option by applying one real mistake a student might make, keeping the same length and
   wording pattern. If someone who does not know the material could pick out the right option
-  from its wording, rewrite the options.
+  from its wording, rewrite the options. Randomly alternate the letter/choice associated with the correct answer.
 - **A plan.** At the end, add to `my/map.md` a short plan: the links still marked partial or not
   yet, each with the section to reread, the worked example to redo and the exercise to try, with
   minutes for each. If a question was left unanswered when time ran out, put the question in the
